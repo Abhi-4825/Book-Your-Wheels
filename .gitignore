@@ -29,5 +29,12 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+
+
+# === Environment / secrets ===
+ src/main/resources/application.properties
+
+
+
 ### VS Code ###
 .vscode/

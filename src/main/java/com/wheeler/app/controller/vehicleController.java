@@ -1,7 +1,7 @@
 package com.wheeler.app.controller;
 
 import com.wheeler.app.model.vehicle;
-import com.wheeler.app.service.service;
+import com.wheeler.app.service.VehicleService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -9,8 +9,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/")
 public class vehicleController {
-    private service service;
-    public vehicleController(service service){
+    private VehicleService service;
+    public vehicleController(VehicleService service){
         this.service = service;
     }
     @PostMapping("insert")
@@ -21,7 +21,4 @@ public class vehicleController {
     public List<vehicle> getVehicles() {
         return service.findAllVehicles();
     }
-
-
-
 }
