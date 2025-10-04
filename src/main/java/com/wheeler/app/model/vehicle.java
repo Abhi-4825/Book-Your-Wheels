@@ -12,6 +12,7 @@ public class vehicle {
     String VName;
     String VType;
     double VCharge;
+    int quantity;
     boolean available;
 
     public int getId() {
@@ -24,6 +25,14 @@ public class vehicle {
 
     public String getVName() {
         return VName;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public void setVName(String VName) {
